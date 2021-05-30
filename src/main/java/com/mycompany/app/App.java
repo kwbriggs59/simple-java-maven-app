@@ -11,7 +11,8 @@ public class App
     public App() {}
 
     public static void main(String[] args) {
-        System.out.println(new App().getMessage());
+        String htmlmessage = "<html><h1>" + new App().getMessage() + "</h1></html>";
+        System.out.println(htmlmessage);
     }
 
     private final String getMessage() {
