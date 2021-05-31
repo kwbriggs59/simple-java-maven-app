@@ -25,7 +25,6 @@ pipeline {
             steps {
                 script {
                     app = docker.build("kwbriggs/train-schedule")
-                    }
                 }
             }
         }
