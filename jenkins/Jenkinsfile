@@ -9,12 +9,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh '/usr/share/maven/mvn -B -DskipTests clean package'
+                sh '/usr/share/maven/bin/mvn -B -DskipTests clean package'
             }
         }
         stage('Test') {
             steps {
-                sh '/usr/share/maven/mvn test'
+                sh '/usr/share/maven/bin/mvn test'
             }
             post {
                 always {
