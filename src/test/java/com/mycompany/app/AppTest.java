@@ -34,7 +34,7 @@ public class AppTest
     {
         App.main(null);
         try {
-            assertEquals("<html><h1>Hello New World!</h1></html>" + System.getProperty("line.separator"), outContent.toString());
+            assertEquals("<html><h1>Hello Old World!</h1></html>" + System.getProperty("line.separator"), outContent.toString());
         } catch (AssertionError e) {
             fail("\"message\" is not \"Hello World!\"");
         }
