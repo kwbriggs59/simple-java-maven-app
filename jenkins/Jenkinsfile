@@ -22,6 +22,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'
+                sh 'java -jar target/my-app-1.0-SNAPSHOT.jar > index.html'
             }
         }
         stage('Test') {
